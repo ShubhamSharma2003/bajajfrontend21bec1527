@@ -11,7 +11,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const jsonInput = JSON.parse(input);
-      const res = await axios.post("http://localhost:3000/bfhl", jsonInput);
+      const res = await axios.post("https://bfhl-kjgc.onrender.com/bfhl", jsonInput);
       setResponse(res.data);
       setError("");
     } catch (err) {
